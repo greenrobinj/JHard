@@ -2,7 +2,6 @@ import React, { Component } from 'react';
 import {
   Grid,
   Responsive,
-  Fragment,
 } from 'semantic-ui-react';
 import styled from 'styled-components';
 import Slider from "react-slick";
@@ -34,7 +33,7 @@ class Home extends Component {
                   <HatM stackable>
                   </HatM>
                 </HeaderImage>
-                <Text class="ui image full gird ">I am a video nut! I have a bachelor's degree and a master's degree in film, through which I have developed my focus on simple, emotionally driven videos. I produce a wide variety of videos, from wedding highlights to documentaries to educational media. The main focus of everything I make is story - I believe everyone has a story to tell.</Text>
+                <Text class="ui image full gird ">I am a video nut! I have a bachelor's degree in film. I produce a wide variety of videos, weddings, documentaries and educational - I believe everyone has a story to tell.</Text>
               </Responsive>
             </Grid.Column>
           </Grid.Row>
@@ -84,23 +83,20 @@ animation-direction: alternate;
 
 const HeaderImage = styled.div`
   background-image: linear-gradient( rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.2) ), 
-                    url('https://scontent-sjc3-1.xx.fbcdn.net/v/t1.0-9/13934611_10153806540045949_6970624363176560186_n.jpg?_nc_cat=0&oh=0db35f1836461b7a02698736e09adea8&oe=5C121836');
+    url('https://scontent-sjc3-1.xx.fbcdn.net/v/t1.0-9/13934611_10153806540045949_6970624363176560186_n.jpg?_nc_cat=0&oh=0db35f1836461b7a02698736e09adea8&oe=5C121836');
   background-size: cover;
   background-position: center ;
   background-repeat: no-repeat; 
   text-align: center;
   width: 100wv;
   height: 100vh;
-
 `
-// `
-const HeaderText = styled.h1`
-  
+const HeaderText = styled.h1`  
   color: white;
   text-shadow: 2px 2px 8px black;
   font-size: 50px;
-
 `
+
 const WordBox = styled.div`
   display: flex;
   justify-content: space-around;

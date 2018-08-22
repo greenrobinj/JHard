@@ -5,7 +5,7 @@ import {
 } from 'semantic-ui-react';
 import styled from 'styled-components';
 
-class HeaderImages extends Component {
+class Portfolio extends Component {
   render() {
     const IMAGES = 
       [{
@@ -93,13 +93,14 @@ class HeaderImages extends Component {
         thumbnailHeight: 212,
         caption: "Dogie"
       },
-
       ]
+
+      
 
     return (
       <div>
           <MainHeader>
-            <Header as="h1" color="inverted" textAlign="center">Portfolio</Header>
+            <HeaderText>Portfolio</HeaderText>
           </MainHeader>
           <Space>
           {/* <ContainerGallery> */}
@@ -113,7 +114,7 @@ class HeaderImages extends Component {
 
 const MainHeader = styled.div`
 background-image: linear-gradient( rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.2) ), 
-                url('https://scontent-sjc3-1.xx.fbcdn.net/v/t1.0-9/1234287_10151614923435949_1573810031_n.jpg?_nc_cat=0&oh=baabd5f8962acc01a6b9c0d6f171edf0&oe=5BCC2926');
+  url('https://scontent-sjc3-1.xx.fbcdn.net/v/t1.0-9/1234287_10151614923435949_1573810031_n.jpg?_nc_cat=0&oh=baabd5f8962acc01a6b9c0d6f171edf0&oe=5BCC2926');
 display: flex;
 background-repeat: no-repeat;
 background-position: center; 
@@ -128,6 +129,12 @@ text-shadow: 2px 2px 8px black;
 font-size: 50px;
 `
 
+const HeaderText = styled.h1`
+  color: white;
+  text-shadow: 2px 2px 8px black;
+  font-size: 50px;
+`
+
 const Space = styled.div`
   margin-left: 65px;
 `
@@ -139,4 +146,4 @@ const Space = styled.div`
 //   margin: 10px;
 // `
 
-export default HeaderImages;
+export default Portfolio;

@@ -6,7 +6,8 @@ import Login from './Login';
 import Register from './Register';
 import Flash from './Flash';
 import Home from './Home';
-import HeaderImages from './HeaderImages';
+import Portfolio from './Portfolio';
+import Contact from './Contact';
 
 // import ProtectedRoute from './ProtectedRoute';
 import AuthRoute from './AuthRoute';
@@ -22,7 +23,8 @@ class App extends Component {
         <FetchUser>
           <Switch>
             <Route exact path='/' component={Home} />
-            <Route exact path='/gallery' component={HeaderImages} />
+            <Route exact path='/gallery' component={Portfolio} />
+            <Route exact path='/contact' component={Contact} />
             <AuthRoute exact path='/login' component={Login} />
             <AuthRoute exact path='/register' component={Register} />
             <Route component={NoMatch} />

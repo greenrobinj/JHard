@@ -21,7 +21,8 @@ class Home extends Component {
                   <HeaderText>Jenny Hardy Media</HeaderText>
                   <Hat stackable>
                   </Hat>
-                  <Text>I am a video nut! I have a bachelor's degree and a master's degree in film, through which I have developed my focus on simple, emotionally driven videos. I produce a wide variety of videos, from wedding highlights to documentaries to educational media. The main focus of everything I make is story - I believe everyone has a story to tell.</Text>
+                  <Text>The main focus of everything I make is story 
+                    <br/>- I believe everyone has a story to tell.</Text>
                 </HeaderImage>
               </Responsive>
             </Grid.Column>
@@ -33,7 +34,8 @@ class Home extends Component {
                   <HatM stackable>
                   </HatM>
                 </HeaderImage>
-                <Text class="ui image full gird ">I am a video nut! I have a bachelor's degree in film. I produce a wide variety of videos, weddings, documentaries and educational - I believe everyone has a story to tell.</Text>
+                <Text class="ui image full gird ">The main focus of everything I make is story 
+                    <br/>- I believe everyone has a story to tell.</Text>
               </Responsive>
             </Grid.Column>
           </Grid.Row>

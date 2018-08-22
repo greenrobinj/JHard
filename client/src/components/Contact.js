@@ -2,6 +2,10 @@ import React, { Component } from 'react';
 import {
   Grid,
   Responsive,
+  Form,
+  Input,
+  TextArea,
+  Button,
 } from 'semantic-ui-react';
 import styled from 'styled-components';
 
@@ -15,10 +19,48 @@ class Contact extends Component {
               <Responsive minWidth={768}>
 
                 <HeaderImage>
-                  <HeaderText>Jenny Hardy Media 
+                  <HeaderText>Jenny Hardy Media
                   <ConUs> contact us</ConUs></HeaderText>
                 </HeaderImage>
                 <BG>
+
+                  <AboutMe>
+                    <h1>A Little About ME</h1>
+                    <br/>
+                    <h3>i like to make pictors</h3>
+                  </AboutMe>
+                  <EmailForm>
+                    <Form>
+                      <Form.Group widths='equal'>
+                        <Form.Field
+                          id='form-input-control-first-name'
+                          control={Input}
+                          label='Your Name'
+                          placeholder='Your Name'
+                        />
+                        <Form.Field
+                        id='form-input-control-last-name'
+                        control={Input}
+                        label='Your Em@il'
+                        placeholder='Your Em@il'
+                      />
+                      </Form.Group>
+                      <Form.Field
+                        id='form-textarea-control-opinion'
+                        style={{ height: '200px' }}
+                        control={TextArea}
+                        label='What do can we do for you?'
+                      // placeholder='Opinion'
+                      />
+                      <Form.Field
+                        id='form-button-control-public'
+                        control={Button}
+                        content='Send'
+                      // label='Label with htmlFor'
+                      />
+                    </Form>
+                  </EmailForm>
+
 
 
                 </BG>
@@ -59,8 +101,19 @@ const ConUs = styled.h2`
   padding-left: 150px;
 `
 const BG = styled.div`
+  display: flex;
   background-color: slategray;
   height: 500px;
+`
+
+const EmailForm = styled.div`
+  flex: 2;
+  margin: 25px;
+  `
+
+const AboutMe = styled.div`
+  flex: 2;
+  margin: 25px;
 `
 
 
